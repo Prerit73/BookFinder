@@ -37,7 +37,7 @@ $(document).ready(function () {
   });
 
   function displayResults(response) {
-    for (var i = 0; i < response.items.length; i++) {
+    for (var i = 0; i < response.items.length; i=i+2) {
       item = response.items[i];
       title1 = item.volumeInfo.title;
       author1 = item.volumeInfo.authors;
